@@ -16,4 +16,5 @@ document.querySelector('#form').addEventListener('submit', (event) => {
   event.preventDefault() // browser will not have any value
   console.log(event.target.username.value)
   window.alert(event.target.username.value)
+  event.target.username.value = '' // clean value in input
 })
