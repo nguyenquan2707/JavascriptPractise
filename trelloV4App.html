@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="jquery-3.4.0.js"></script>
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="trelloV4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#search').click(function() {
+               let text = $('#input').css('color', 'blue').val();
+               search(text);
+            })
+
+        });
+    </script>
+  </head>
+  <body>
+    <input id="input" type="text" value=""/>
+    <button id="search">Search</button>
+    <div id="divResult"></div>
+  </body>
+</html>

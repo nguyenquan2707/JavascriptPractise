@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="jquery-3.4.0.js"></script>
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="trelloV4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+           // a dont declare
+          let a
+          alert(a)
+
+          // dont's declare property in object
+          let b = {
+              title: 'title',
+              isDone: true,
+          }
+          alert(b.name)
+
+          // array dont have element
+          let c = [1, 2, 3]
+          alert(c[3])
+
+          //null case, id not declare
+          let d = document.getElementById('#id')
+         alert(d)
+         alert(typeof(null))
+         //NaN
+         let x = 0/0
+         alert(x + ' type of is ' + typeof(x))
+         alert(` ${x} === NaN ? ${x === NaN}`) //
+
+         //infinity
+         let e = 1/0
+         alert(`e ${e}`)
+        });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

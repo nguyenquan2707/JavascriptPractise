@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="jquery-3.4.0.js"></script>
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="trelloV2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          addMeeting(todo, 4);
+          meetingDone(todo, 1);
+          addDay(todo, "Friday");
+          let result = 'day: ' + todo.days+ '</br> meeting: ' + todo.meetings + '</br> meetingDone: ' + todo.meetingDone;
+          $('#divResult').html(result);
+          $('#sumOfMeeting').html(`Sum of meeting is: ${sumOfMeeting(todo)}`);
+        });
+    </script>
+  </head>
+  <body>
+
+    <div id="divResult"></div>
+    <div id="sumOfMeeting"></div>
+  </body>
+</html>

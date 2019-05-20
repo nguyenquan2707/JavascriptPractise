@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="jquery-3.4.0.js"></script>
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          const myTodo = [];
+
+        myTodo.push('will learn JavaScrip');
+        myTodo.push('will learn ajax');
+        myTodo.push('will learn jQuery');
+        myTodo.push('will learn Python');
+        
+        let result = ''
+        myTodo.forEach(function(data) {
+            result+= "</br>" + data;
+        });
+        $('#divResult').html(result);
+
+        let result2 = '';
+        for (let index = 0; index < myTodo.length; index++) {
+          result2+= myTodo[index] + ", ";
+        }
+        alert(result2);
+
+
+        });
+    </script>
+  </head>
+  <body>
+    <p>List of  my task to do: </p>
+    <div id="divResult"></div>
+  </body>
+</html>
