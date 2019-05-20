@@ -11,3 +11,9 @@ function myvalidation() {
     window.alert('please enter number')
   }
 }
+
+document.querySelector('#form').addEventListener('submit', (event) => {
+  event.preventDefault() // browser will not have any value
+  console.log(event.target.username.value)
+  window.alert(event.target.username.value)
+})
