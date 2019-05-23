@@ -5,10 +5,20 @@
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <meta charset="UTF-8" />
     <title>Hello World</title>
-    <script src="jquery-3.4.0.js"></script>
   </head>
   <body>
-
+      <div id="container" align="center">
+           <div class="controls">
+              <h1>My App</h1>
+              <input type="text" id="input"><br />
+              <button type="button" id="add">Add ToDo</button><br />
+              <button type="button" id="remove">Remove ToDo</button>
+           </div>
+           <ul id="list">
+                  <li class="mycheck"><input type="checkbox" id="check" />Go to Gym</li>
+                  <li class="mycheck"><input type="checkbox" id="check" checked />Learning Spring</li>
+          </ul>
+      </div>
   <script src="todo.js"></script>
   </body>
 </html>

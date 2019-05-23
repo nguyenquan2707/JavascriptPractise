@@ -1,24 +1,20 @@
 let todo = {
-     days: "Monday",
-     meetings: 0,
-     meetingDone: 0,
-
-};
-
-let addMeeting = function(todo, number = 0) { // default = 0
-     todo.meetings += number;
+  days: 'Monday',
+  meetings: 0,
+  meetingDone: 0
 }
 
-let meetingDone = function(todo, number = 0) {
-     todo.meetingDone += number;
+let addMeeting = function (todo, number = 0) { // default = 0
+  todo.meetings += number
 }
-
-let addDay = function(todo, day) {
-     todo.days = day; 
+let meetingDone = function (todo, number = 0) {
+  todo.meetingDone += number
 }
-
-let sumOfMeeting = function(todo) {
-     return todo.meetings - todo.meetingDone;
+let addDay = function (todo, day) {
+  todo.days = day
+}
+let sumOfMeeting = function (todo) {
+  return todo.meetings - todo.meetingDone
 }
 
 // addMeeting(todo, 2);
