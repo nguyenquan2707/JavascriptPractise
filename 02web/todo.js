@@ -1,11 +1,20 @@
 let ul = document.querySelector('#list')
 let li
 
-let addButton = document.querySelector('#add').addEventListener('click', addTodo)
+let addButton = document.querySelector('#add')
 addButton.addEventListener('click', addTodo)
 
-// let removeButton = document.querySelector('#remove')
-// removeButton.addEventListener('click', removeTodo())
+let removeButton = document.querySelector('#remove')
+removeButton.addEventListener('click', removeTodo)
+
+function removeTodo () {
+  li = ul.children
+  for (let index = 0; index < li.length; index++) {
+    while (li[index] && li[index].children[0].checked) { // loop all element li, each li, then input have checked, then remove li, done
+      ul.removeChild(li[index])
+    }
+  }
+}
 
 function addTodo () {
   let add = document.querySelector('#input')
@@ -24,7 +33,7 @@ function addTodo () {
     checkbox.setAttribute('id', 'check')
 
     // create lable
-    let lable = document.createElement('lable')  
+    let lable = document.createElement('lable')
     lable.appendChild(textnode)
     // ul.appendChild(lable)
     li.appendChild(checkbox)
