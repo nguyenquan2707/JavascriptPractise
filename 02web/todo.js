@@ -1,7 +1,7 @@
 let ul = document.querySelector('#list')
 let li
 
-let addButton = document.querySelector('#add')
+let addButton = document.querySelector('#add').addEventListener('click', addTodo)
 addButton.addEventListener('click', addTodo)
 
 // let removeButton = document.querySelector('#remove')
