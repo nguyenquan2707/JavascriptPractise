@@ -10,15 +10,20 @@
       <div id="container" align="center">
            <div class="controls">
               <h1>My App</h1>
-              <input type="text" id="input"><br />
-              <button type="button" id="add">Add ToDo</button><br />
-              <button type="button" id="remove">Remove ToDo</button>
+              <input id="input" type="text"><br />
+              <button id="add" type="button" onclick="addTodo()">Add ToDo</button><br />
+              <button id="remove" type="button">Remove ToDo</button>
            </div>
            <ul id="list">
-                  <li class="mycheck"><input type="checkbox" id="check" />Go to Gym</li>
-                  <li class="mycheck"><input type="checkbox" id="check" checked />Learning Spring</li>
+            
+                  <li class="mycheck">
+                    <input type="checkbox" id="check" />Go to Gym
+                  </li>
+                  <li class="mycheck">
+                    <input type="checkbox" id="check" checked />Learning Spring
+                  </li>
           </ul>
       </div>
-  <script src="todo.js" ></script>
+  <script src="todo1.js" ></script>
   </body>
 </html>
